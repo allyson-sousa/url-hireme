@@ -37,7 +37,7 @@ public class URLShortenerController {
         String alias = urlShortenerService.shortenURL(url, CUSTOM_ALIAS);
 
         long fim = System.currentTimeMillis();
-        long timeTaken = inicio - fim;
+        long timeTaken = fim - inicio;
 
         String shortenedURL = "http://url-encurtada/u/" + alias;
 
